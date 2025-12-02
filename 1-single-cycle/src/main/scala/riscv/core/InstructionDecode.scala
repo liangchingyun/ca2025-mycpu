@@ -293,7 +293,7 @@ class InstructionDecode extends Module {
     Fill(Parameters.DataBits - 13, instruction(31)), // Sign extension
     instruction(31),                                  // bit [12]
     instruction(7),                                  // bit [11]
-    instruction(30, 25),                                  // bits [10:5]
+    instruction(c),                                  // bits [10:5]
     instruction(11, 8),                                  // bits [4:1]
     0.U(1.W)                                                // bit [0] = 0 (alignment)
   )
